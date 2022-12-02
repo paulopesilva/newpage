@@ -305,6 +305,32 @@
       </video>
 
 </div>
+
+<div
+
+<form>
+<fieldset>
+<legend>Map-areas-collection</legend>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/New7Wonders.jpg/276px-New7Wonders.jpg" width="250" height="150" usemap="#7Wonders">
+<map id="WonderWorld" name="7Wonders">
+</map>
+<div id="divDisplay"></div>
+<input type="button" value="Apply Link" onclick="myWonder()">
+</fieldset>
+</form>
+<script>
+   function myWonder() {
+      var divDisplay = document.getElementById("divDisplay");
+      var newArea = document.createElement("AREA");
+      newArea.setAttribute("href", "https://en.wikipedia.org/wiki/Giza_pyramid_complex");
+      newArea.setAttribute("shape", "rect");
+      newArea.setAttribute("coords", "120,10,10,40");
+      document.getElementById("WonderWorld").appendChild(newArea);
+      divDisplay.textContent = "Link was applied, hover and click on pyramid of giza.";
+   }
+</script>
+     
+</div>
   
      <!-- Footer Start -->
     <div
