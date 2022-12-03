@@ -37,7 +37,7 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FF3800;
+    color: #A50B5E;
 }
 
 .btn-square {
@@ -112,7 +112,7 @@
     }
 
     .navbar .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid #A50B5E;
     }
 }
 
@@ -257,9 +257,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: #A50B5E;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #A50B5E;
     font-size: 22px;
     transition: .5s;
 }
@@ -288,7 +288,7 @@
     width: 15px;
     height: 15px;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #A50B5E;
     transition: .5s;
 }
 
