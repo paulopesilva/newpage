@@ -6,13 +6,11 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
-<!-- HERE JavaScript Libs & Style Sheets-->
-    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
-    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
-    <!-- HERE JavaScript Libs & Style Sheets end-->
+
+    <! -- GooGle Map -->
+    
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="style.css">
     
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -327,12 +325,37 @@ p    {color: red;}
   <source src="thales-lampada.mp4" type="video/mp4">
   <source src="thales-lampada.ogg" type="video/ogg">
   Your browser does not support HTML video.
-</video>
-     
-
-  
+</video>  
 </div>
-  
+
+
+  <div id="map" class="map"></div>
+ 
+    <!--controls-->
+    <span id="zoomIn" class="btn zoom in">
+        <i class="fa fa-plus"></i>
+    </span>
+    <span id="zoomOut" class="btn zoom out">
+        <i class="fa fa-minus"></i>
+    </span>
+ 
+    <span id="center" class="btn zoom center">
+        <i class="fa fa-crosshairs"></i>
+    </span>
+ 
+    <div class="mapTypeId">
+        <select id="mapTypeId">
+            <option value="1">Roadmap</option>
+            <option value="2">Satellite</option>
+        </select>
+    </div>
+ 
+</div>
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCLFomDOPKqvvITt7tv_hZG0PDlWB2-q0g'></script>
+<script src='https://code.jquery.com/jquery-1.11.3.min.js'></script>
+<script src='https://code.jquery.com/jquery-migrate-1.2.1.min.js'></script>
+ 
+    <script  src="function.js"></script>
      <!-- Footer Start -->
     <div
       class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
