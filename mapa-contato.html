@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style>.leaflet-popup-content-wrapper, .leaflet-popup.tip {background-color: 	#800020 !important; }</style>
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_79023c9e3e90aff3e7934d265f85abe5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_79023c9e3e90aff3e7934d265f85abe5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_79023c9e3e90aff3e7934d265f85abe5 = L.map(
+                "map_79023c9e3e90aff3e7934d265f85abe5",
+                {
+                    center: [-7.417754, -37.218771],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+
+            
+
+        
+    
+            var tile_layer_2262797dc0d8da9e20fe217036d7792f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+        
+    
+            var circle_cc9218637b6020757ddb8c1884e85e89 = L.circle(
+                [-7.3795, -37.18902],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+        
+    
+        var popup_6b2bc03fabb248544c3c3330e8804d60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a881738bb2a70b6ef922ed492ea102c = $(`<div id="html_8a881738bb2a70b6ef922ed492ea102c" style="width: 100.0%; height: 100.0%;">Arquitetura mais e StartUp NutShell</div>`)[0];
+                popup_6b2bc03fabb248544c3c3330e8804d60.setContent(html_8a881738bb2a70b6ef922ed492ea102c);
+            
+        
+
+        circle_cc9218637b6020757ddb8c1884e85e89.bindPopup(popup_6b2bc03fabb248544c3c3330e8804d60)
+        ;
+
+        
+    
+    
+            var marker_6d885478002752c42052e5b67a833c06 = L.marker(
+                [-7.3295, -37.24902],
+                {"color": "red"}
+            ).addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+        
+    
+            var div_icon_3649f0ae3fbd90bd431ca9fa4cd8fdab = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 14pt\", width=\"200\"\u003eClick na localiza\u00e7\u00e3o papa um popup com mais informa\u00e7\u00f5es\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [150, 36]});
+            marker_6d885478002752c42052e5b67a833c06.setIcon(div_icon_3649f0ae3fbd90bd431ca9fa4cd8fdab);
+        
+    
+            var marker_0666ee861b09cab08267fbad04020ad6 = L.marker(
+                [-7.3799, -37.180369],
+                {}
+            ).addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+        
+    
+        var popup_2a05e3208bc4840e97526105e4d7f765 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2d4b134dadad6471de70ff4465650861 = $(`<div id="html_2d4b134dadad6471de70ff4465650861" style="width: 100.0%; height: 100.0%;">             <!DOCTYPE html>             <html><body style="background-color:#800020">             <h1 align="center" style="font-family:Calibri; color:white"><strong><u>Arquitetura Mais</u><strong>             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>             </h1>              <!-- <p class="narrow" style="text-align: left;"> -->             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">                              <div class="panel panel-default" style="text-align: left; border-color: #ffffff !important;">                     <div class="panel-heading" role="tab" id="headingOne" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">                                 <strong> <i class="fa fa-newspaper-o"></i> Sobre Nós <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span></strong>                             </a>                         </h4>                     </div>                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">                         <div class="panel-body" align="justify">                         Projetos de arquitetura, design de interiores e consultoria é o nosso foco.                              </div>                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingTwo" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                                 <strong><i class="fa fa-usd"></i> Orçamentos <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">                         <div class="panel-body" align="justify">                         Visitem-nos para uma consultoria residencial e sem compromissos.                         </div>                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingThree" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                                 <strong><i class="fa fa-map-marker"></i> Localização <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">                         <div class="panel-body" align="justify">                         Itapetim (centro)                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingFour" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                                 <strong><i class="fa fa-clock-o"></i> Nosso horário <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">                         <div class="panel-body" align="justify">                         diariamente das 8h00min às 18h00min                         </div>                     </div>                 </div>             </div>                <center>                 <img src="/home/paulo/Documentos/py/asaf/img/beth.svg" width="200" style="border-radius: 50px;"/>             </center>            </html>             </div>`)[0];
+                popup_2a05e3208bc4840e97526105e4d7f765.setContent(html_2d4b134dadad6471de70ff4465650861);
+            
+        
+
+        marker_0666ee861b09cab08267fbad04020ad6.bindPopup(popup_2a05e3208bc4840e97526105e4d7f765)
+        ;
+
+        
+    
+    
+            marker_0666ee861b09cab08267fbad04020ad6.bindTooltip(
+                `<div>
+                     Arquitetura Mais
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b7df3aee30bee2ecb2f49de3e541fe5 = L.marker(
+                [-7.38106, -37.192],
+                {}
+            ).addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+        
+    
+        var popup_04f72a97cd98de83d09b575067e01010 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_c09f0354c8c4f9d9cab3943bd5eab338 = $(`<div id="html_c09f0354c8c4f9d9cab3943bd5eab338" style="width: 100.0%; height: 100.0%;">             <!DOCTYPE html>             <html><body style="background-color:#800020">             <h1 align="center" style="font-family:Calibri; color:white"><strong><u>StartUp NutShell</u><strong>             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>             </h1>              <!-- <p class="narrow" style="text-align: left;"> -->             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">                              <div class="panel panel-default" style="text-align: left; border-color: #ffffff !important;">                     <div class="panel-heading" role="tab" id="headingOne" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">                                 <strong> <i class="fa fa-newspaper-o"></i> Sobre Nós <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span></strong>                             </a>                         </h4>                     </div>                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">                         <div class="panel-body" align="justify">                         Projetos em Tecnologia IoT de automação residencial com Gadgets eletrônicos de última geração                             </div>                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingTwo" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                                 <strong><i class="fa fa-usd"></i> Orçamentos <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">                         <div class="panel-body" align="justify">                         Visitem-nos para uma consultoria residencial e sem compromissos.                         </div>                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingThree" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                                 <strong><i class="fa fa-map-marker"></i> Localização <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">                         <div class="panel-body" align="justify">                         Itapetim (centro)                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingFour" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                                 <strong><i class="fa fa-clock-o"></i> Nosso horário <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">                         <div class="panel-body" align="justify">                         diariamente das 8h00min às 18h00min                         </div>                     </div>                 </div>             </div>                <center>                 <img src="/home/paulo/Documentos/py/asaf/img/paulo.svg" width="200" style="border-radius: 50px;"/>             </center>            </html>             </div>`)[0];
+                popup_04f72a97cd98de83d09b575067e01010.setContent(html_c09f0354c8c4f9d9cab3943bd5eab338);
+            
+        
+
+        marker_6b7df3aee30bee2ecb2f49de3e541fe5.bindPopup(popup_04f72a97cd98de83d09b575067e01010)
+        ;
+
+        
+    
+    
+            marker_6b7df3aee30bee2ecb2f49de3e541fe5.bindTooltip(
+                `<div>
+                     StartUp NutShell
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_367dc299103aab4cfd868cefcba6a610 = L.marker(
+                [-7.47022, -37.2744],
+                {}
+            ).addTo(map_79023c9e3e90aff3e7934d265f85abe5);
+        
+    
+        var popup_dae93b2bb44d83c4b205883c94c87e06 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_41845457f0f01a4ff4f99dbd94cad566 = $(`<div id="html_41845457f0f01a4ff4f99dbd94cad566" style="width: 100.0%; height: 100.0%;">             <!DOCTYPE html>             <html><body style="background-color:#800020">             <h1 align="center" style="font-family:Calibri; color:white"><strong><u>Innove Luminar</u><strong>             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>             </h1>              <!-- <p class="narrow" style="text-align: left;"> -->             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">                              <div class="panel panel-default" style="text-align: left; border-color: #ffffff !important;">                     <div class="panel-heading" role="tab" id="headingOne" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">                                 <strong> <i class="fa fa-newspaper-o"></i> Sobre Nós <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span></strong>                             </a>                         </h4>                     </div>                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">                         <div class="panel-body" align="justify">                         Visite nossa lógica física para se informar sobre iluminação residencial sofisticada e moderna.                             </div>                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingTwo" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                                 <strong><i class="fa fa-usd"></i> Orçamentos <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">                         <div class="panel-body" align="justify">                         Visitem-nos para uma consultoria residencial e sem compromissos.                         </div>                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingThree" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                                 <strong><i class="fa fa-map-marker"></i> Localização <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">                         <div class="panel-body" align="justify">                         São José do Egito                     </div>                 </div>                                  <div class="panel panel-default" style="text-align: left !important; border-color: #ffffff!important;">                     <div class="panel-heading" role="tab" id="headingFour" style="background: #ffffff!important;">                         <h4 class="panel-title" style="color:cornflowerblue">                             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">                                 <strong><i class="fa fa-clock-o"></i> Nosso horário <span class="glyphicon glyphicon-menu-down" aria-hidden="true" style="float: right;"></span> </strong>                             </a>                         </h4>                     </div>                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">                         <div class="panel-body" align="justify">                         diariamente das 8h00min às 18h00min                         </div>                     </div>                 </div>             </div>                <center>                 <img src="/home/paulo/Documentos/py/asaf/img/about.jpg" width="200" style="border-radius: 50px;"/>             </center>            </html>             </div>`)[0];
+                popup_dae93b2bb44d83c4b205883c94c87e06.setContent(html_41845457f0f01a4ff4f99dbd94cad566);
+            
+        
+
+        marker_367dc299103aab4cfd868cefcba6a610.bindPopup(popup_dae93b2bb44d83c4b205883c94c87e06)
+        ;
+
+        
+    
+    
+            marker_367dc299103aab4cfd868cefcba6a610.bindTooltip(
+                `<div>
+                     Innove Luminar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_fa17d4bc6ccf3447b45c6cc7fff1e252 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_ddf09a0dec06dec3827328bd0e9da83f = new L.Control.MiniMap(
+                tile_layer_fa17d4bc6ccf3447b45c6cc7fff1e252,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": true, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -5}
+            );
+            map_79023c9e3e90aff3e7934d265f85abe5.addControl(mini_map_ddf09a0dec06dec3827328bd0e9da83f);
+        
+</script>
+</html>
