@@ -578,3 +578,6 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+.logo-img path {
+  fill: #FFBF00;
+}
